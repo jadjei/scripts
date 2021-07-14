@@ -12,9 +12,9 @@
 
 
 #--------- Set the Path to your node socket file and to your genesis files here ---------
-socket="db-mainnet/node.socket" #Path to your cardano-node socket for machines in online-mode. Another example would be "$HOME/cnode/sockets/node.socket"
-genesisfile="configuration-mainnet/mainnet-shelley-genesis.json"           #Shelley-Genesis path, you can also use the placeholder $HOME to specify your home directory
-genesisfile_byron="configuration-mainnet/mainnet-byron-genesis.json"       #Byron-Genesis path, you can also use the placeholder $HOME to specify your home directory
+socket="db-testnet/node.socket" #Path to your cardano-node socket for machines in online-mode. Another example would be "$HOME/cnode/sockets/node.socket"
+genesisfile="config/testnet-shelley-genesis.json"           #Shelley-Genesis path, you can also use the placeholder $HOME to specify your home directory
+genesisfile_byron="config/testnet-byron-genesis.json"       #Byron-Genesis path, you can also use the placeholder $HOME to specify your home directory
 
 
 #--------- Set the Path to your main binaries here ---------
@@ -54,8 +54,8 @@ remoteServerPostCommand="~/remoteuser/restartCore.sh"      	#Command to execute 
 
 #--------- Only needed if you wanna change the BlockChain from the Mainnet to a Testnet Chain Setup
 byronToShelleyEpochs=208 	#choose 208 for the mainnet, 74 for the public testnet
-magicparam="--mainnet"          #choose "--mainnet" for mainnet or "--testnet-magic 1097911063" for the public testnet
-addrformat="--mainnet"          #choose "--mainnet" for mainnet address format or "--testnet-magic 1097911063" for the testnet address format
+magicparam="--testnet"          #choose "--mainnet" for mainnet or "--testnet-magic 1097911063" for the public testnet
+addrformat="--testnet"          #choose "--mainnet" for mainnet address format or "--testnet-magic 1097911063" for the testnet address format
 
 
 
